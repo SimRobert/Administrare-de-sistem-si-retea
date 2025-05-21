@@ -1,10 +1,19 @@
-# Administrare-de-sistem-si-retea
+# Administrare de sistem si retea
 
-## Servicii instalate
+## 1. Ubuntu Server
 
-### 1. Mail (Postfix - Port 25)
-Server de email local configurat cu Postfix pe Ubuntu Server.
+Ubuntu Server a fost utilizat ca sistem de bază pentru instalarea și testarea serviciilor în VirtualBox. După instalare, s-au adăugat serviciile necesare pentru rularea aplicațiilor web și trimiterea de emailuri locale.
 
-- Instalare:
+Servicii instalate și configurate:
+
+- Docker + NGINX
+- Postfix (MAIL – port 25)
+
+---
+
+## 2. Docker
+
+Docker a fost instalat folosind repository-ul oficial, după adăugarea cheii GPG și configurarea sursei software.
+
 ```bash
-sudo apt install postfix mailutils -y
+sudo apt install docker-ce docker-ce-cli containerd.io -y
